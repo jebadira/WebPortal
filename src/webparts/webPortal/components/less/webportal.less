@@ -1,0 +1,114 @@
+
+.editPortal{
+    text-align:right;
+}
+.CardCollection{
+        .Card{
+            padding-left:0;
+            padding-right:0;
+            width:100%;
+            height:100%;
+            .materialCard{
+                -webkit-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.5);
+                -moz-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.5);
+                box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.5);
+                min-height:100%;
+                height:100%;
+                .CardIcon{
+                    color: #FFF;
+                    background-color:#FFC627;
+                    display:inline-block;
+                    height:50px;
+                    width: 50px;
+                    .Icon{
+                        font-size:30px;
+                        text-align: center;
+                        padding: 0;
+                        position: relative;
+                        width:50px;
+                        top:50%;
+                        transform : translateY(-50%);
+                    }
+                }
+                .CardTitle{
+                    margin-top:10px;
+                    margin-bottom:10px;
+                    color:#000;
+                    width:220px;
+                    max-width:200px;
+                }
+                .CardClose{
+                    position:absolute !important;
+                    right:0;
+                    top:0;
+                }
+            }
+        }
+        .LinkCard{
+            &:nth-child(2n){    
+                background-color: #FFC627
+            }
+            &:nth-child(2n+1){
+                height:100%;
+                background-color: #00A3E0
+            }
+            .LinkLink{
+                width:100%;
+                height:100%;
+                display:inline-block;
+                vertical-align: middle;
+                text-align: center;
+                text-decoration: none !important;
+                &:visited, &:link, &:hover, &:active{
+                    text-decoration: none !important;
+                }
+                .iconContainer{
+                    display:flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    height:100%;
+                    .LinkClose{
+                        position:absolute !important;
+                        right:0;
+                        top:0;
+                    }
+                    .LinkIcon{
+                        color : #FFF;
+                        font-size:3em;
+
+                    }
+                    .iconTitle{
+                        color:#FFF;
+                        font-size:10px;
+                    }
+                }
+                
+            }
+            
+            
+        }
+        .CardPlaceHolder{
+            height:100%;
+            width:100%;
+            padding: 0;
+            margin-left:11px;
+           .CardPlaceHolderBackground{
+                
+                width:100%;
+                height:100%;
+                background: rgba(226,226,226,1);
+                background: -moz-linear-gradient(top, rgba(226,226,226,1) 0%, rgba(206,206,206,1) 100%);
+                background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(226,226,226,1)), color-stop(100%, rgba(206,206,206,1)));
+                background: -webkit-linear-gradient(top, rgba(226,226,226,1) 0%, rgba(206,206,206,1) 100%);
+                background: -o-linear-gradient(top, rgba(226,226,226,1) 0%, rgba(206,206,206,1) 100%);
+                background: -ms-linear-gradient(top, rgba(226,226,226,1) 0%, rgba(206,206,206,1) 100%);
+                background: linear-gradient(to bottom, rgba(226,226,226,1) 0%, rgba(206,206,206,1) 100%);
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e2e2', endColorstr='#cecece', GradientType=0 );
+                -webkit-border-radius: 2px;
+                -moz-border-radius: 2px;
+                border-radius: 2px;
+                }
+            }
+    
+}

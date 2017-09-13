@@ -1,0 +1,25 @@
+{
+  "solution": {
+    "name": "web-portal-client-side-solution",
+    "id": "6e8c9ef9-593e-40af-a10d-9dd8dbe3d8f6",
+    "version": "1.0.0.12",
+    "features": [{
+      "title": "default-props-deployment-webpart-client-side-solution",
+      "description": "asset-deployment-webpart-client-side-solution",
+      "id": "3451c3aa-a71c-486e-aa29-d95e7c924e01",
+      "version": "1.0.0.0",
+      "assets": {        
+        "elementManifests": [
+          "elements.xml"
+        ],
+        "elementFiles":[
+          "DefaultProps.xml"
+         
+        ]
+      }
+    }]
+  },
+  "paths": {
+    "zippedPackage": "solution/web-portal.sppkg"
+  }
+}

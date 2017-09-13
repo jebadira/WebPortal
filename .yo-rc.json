@@ -1,0 +1,8 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "libraryName": "web-portal",
+    "framework": "react",
+    "version": "1.0.2",
+    "libraryId": "6e8c9ef9-593e-40af-a10d-9dd8dbe3d8f6"
+  }
+}

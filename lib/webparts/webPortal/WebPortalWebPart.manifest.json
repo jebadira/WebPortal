@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../node_modules/@microsoft/sp-module-interfaces/lib/manifestSchemas/jsonSchemas/clientSideComponentManifestSchema.json",
+
+  "id": "291901e4-87be-4644-a16a-c57e70b54ef0",
+  "alias": "WebPortalWebPart",
+  "componentType": "WebPart",
+  "version": "0.0.1",
+  "manifestVersion": 2,
+
+  "preconfiguredEntries": [{
+    "groupId": "291901e4-87be-4644-a16a-c57e70b54ef0",
+    "group": { "default": "Under Development" },
+    "title": { "default": "WebPortal" },
+    "description": { "default": "DL WebPortal" },
+    "officeFabricIconFontName": "Page",
+    "properties": {
+      "description": "WebPortal"
+    }
+  }]
+}

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+    <Field ID="{F0BB92EA-9418-421A-BFA0-8A0BEA623E56}"
+            Name="AppPropsTitle"
+            DisplayName="App Title"
+            Type="Lookup"
+            List="Lists/DevilLinkAppList"
+            ShowField="Title"
+            Required="TRUE"
+            Group="AppDefaultProps" />
+    <Field ID="{8D796A02-ADCE-40B9-BF77-E619023CA9FE}"
+            FieldRef="{F0BB92EA-9418-421A-BFA0-8A0BEA623E56}"
+            Name="DefaultAppPropsName"
+            DisplayName="App Name"
+            Type="Lookup"
+            Required="TRUE"
+            Group="AppDefaultProps"
+            ShowField="DevilLinkAppListAppName"
+            List="Lists/DevilLinkAppList" />
+    <Field ID="{074170A1-6242-43E4-B31D-9B35400F4800}"
+            FieldRef="{F0BB92EA-9418-421A-BFA0-8A0BEA623E56}"
+            Name="DefaultAppPropsID"
+            DisplayName="App ID"
+            Type="Lookup"
+            Required="TRUE"
+            Group="AppDefaultProps" 
+            ShowField="DevilLinkAppListAppID"
+            List="Lists/DevilLinkAppList"
+            />
+    <Field ID="{DD2CEE95-C3FC-434C-B9AC-3DB78BB5AEB8}"
+            Name="AppPropsProp"
+            DisplayName="App Prop"
+            Type="Note"
+            Required="TRUE"
+            Group="AppDefaultProps" />
+    <Field ID="{4B42949D-5B7E-4F0A-9FB3-377050CA24A2}"
+        Name="AppPropsValue"
+        DisplayName="App Prop Value"
+        Type="Note"
+        Required="TRUE"
+        Group="AppDefaultProps"
+    />
+    <ContentType ID="0x0100236EA794B1C349CC81B1225CA82D91D6" 
+            Name="AppPropsCT" 
+            Group="AppDefaultProps" 
+            Description="CT that is used for react app default props when none are provided.">
+        <FieldRefs>
+            <FieldRef ID="{F0BB92EA-9418-421A-BFA0-8A0BEA623E56}" /> 
+            <FieldRef ID="{8D796A02-ADCE-40B9-BF77-E619023CA9FE}" /> 
+            <FieldRef ID="{074170A1-6242-43E4-B31D-9B35400F4800}" /> 
+            <FieldRef ID="{DD2CEE95-C3FC-434C-B9AC-3DB78BB5AEB8}" /> 
+            <FieldRef ID="{4B42949D-5B7E-4F0A-9FB3-377050CA24A2}" /> 
+        </FieldRefs>
+    </ContentType> 
+
+    <ListInstance 
+            CustomSchema="DefaultProps.xml"
+            TemplateType="100"
+            Title="App Default Props" 
+            Description="React App Default props list"
+            Url="Lists/AppDefaultProps"
+            FeatureId="00bfea71-de22-43b2-a848-c05709900100"
+            >
+    </ListInstance>
+
+</Elements>

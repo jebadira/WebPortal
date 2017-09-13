@@ -1,0 +1,13 @@
+{
+  "entries": [
+    {
+      "entry": "./lib/webparts/webPortal/WebPortalWebPart.js",
+      "manifest": "./src/webparts/webPortal/WebPortalWebPart.manifest.json",
+      "outputPath": "./dist/web-portal.bundle.js"
+    }
+  ],
+  "externals": {},
+  "localizedResources": {
+    "webPortalStrings": "webparts/webPortal/loc/{locale}.js"
+  }
+}
